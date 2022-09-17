@@ -1,0 +1,28 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-6CEHS1.desktop
+x-scheme-handler/notion=notion-app.desktop
+x-scheme-handler/http=userapp-Waterfox-5HAGS1.desktop
+x-scheme-handler/https=userapp-Waterfox-5HAGS1.desktop
+x-scheme-handler/chrome=userapp-Waterfox-5HAGS1.desktop
+text/html=userapp-Waterfox-5HAGS1.desktop
+application/x-extension-htm=userapp-Waterfox-5HAGS1.desktop
+application/x-extension-html=userapp-Waterfox-5HAGS1.desktop
+application/x-extension-shtml=userapp-Waterfox-5HAGS1.desktop
+application/xhtml+xml=userapp-Waterfox-5HAGS1.desktop
+application/x-extension-xhtml=userapp-Waterfox-5HAGS1.desktop
+application/x-extension-xht=userapp-Waterfox-5HAGS1.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-MVC2R1.desktop;userapp-Telegram Desktop-6CEHS1.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=onlyoffice-desktopeditors.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
+x-scheme-handler/http=userapp-Waterfox-5HAGS1.desktop;
+x-scheme-handler/https=userapp-Waterfox-5HAGS1.desktop;
+x-scheme-handler/chrome=userapp-Waterfox-5HAGS1.desktop;
+text/html=userapp-Waterfox-5HAGS1.desktop;
+application/x-extension-htm=userapp-Waterfox-5HAGS1.desktop;
+application/x-extension-html=userapp-Waterfox-5HAGS1.desktop;
+application/x-extension-shtml=userapp-Waterfox-5HAGS1.desktop;
+application/xhtml+xml=userapp-Waterfox-5HAGS1.desktop;
+application/x-extension-xhtml=userapp-Waterfox-5HAGS1.desktop;
+application/x-extension-xht=userapp-Waterfox-5HAGS1.desktop;

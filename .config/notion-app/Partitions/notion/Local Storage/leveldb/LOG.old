@@ -1,0 +1,5 @@
+2022/09/14-14:08:34.933 1cec Reusing MANIFEST /home/jerpo/.config/notion-app/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2022/09/14-14:08:34.934 1cec Recovering log #74
+2022/09/14-14:08:34.934 1cec Level-0 table #77: started
+2022/09/14-14:08:34.935 1cec Level-0 table #77: 15783 bytes OK
+2022/09/14-14:08:34.938 1cec Delete type=0 #74

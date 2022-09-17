@@ -1,0 +1,18 @@
+game:
+  arch: auto
+  exe: /home/jerpo/osu!/osu!.exe
+  prefix: ~/Games/protongames
+  working_dir: ~/osu!
+system:
+  disable_runtime: false
+  prefer_system_libs: false
+  prime: true
+wine:
+  battleye: false
+  dxvk: false
+  eac: false
+  esync: false
+  fsr: false
+  fsync: false
+  version: lutris-GE-Proton7-27-x86_64
+  vkd3d: false

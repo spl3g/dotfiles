@@ -1,0 +1,9 @@
+game:
+  exe: /home/jerpo/Games/ULTRAKILL/ULTRAKILL.exe
+  prefix: ~/Games/protongames
+system: {}
+wine:
+  battleye: false
+  eac: false
+  fsr: false
+  version: lutris-GE-Proton7-28-x86_64

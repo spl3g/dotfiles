@@ -1,0 +1,55 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="CLSSortingParameter" type="int">1</pref>
+	<pref name="CLSTotalPlays" type="int">600</pref>
+	<pref name="CustomWorld_0989f6fa61788c38354a09a9105f4129_Attempts" type="int">114</pref>
+	<pref name="CustomWorld_0989f6fa61788c38354a09a9105f4129_PlayIndex" type="int">600</pref>
+	<pref name="CustomWorld_132f05f4e2a7c65cf65f97a512b0c17e_Attempts" type="int">64</pref>
+	<pref name="CustomWorld_132f05f4e2a7c65cf65f97a512b0c17e_PlayIndex" type="int">585</pref>
+	<pref name="CustomWorld_23494486bef173d6ecb9528b687496a7_Attempts" type="int">10</pref>
+	<pref name="CustomWorld_23494486bef173d6ecb9528b687496a7_PlayIndex" type="int">598</pref>
+	<pref name="CustomWorld_2a4e416979956453c303b7791a9b8174_Attempts" type="int">8</pref>
+	<pref name="CustomWorld_2a4e416979956453c303b7791a9b8174_Completion" type="float">0.182711</pref>
+	<pref name="CustomWorld_2a4e416979956453c303b7791a9b8174_PlayIndex" type="int">596</pref>
+	<pref name="CustomWorld_4c0c60b20e7e85f5acdf3fa9bcf9589f_Attempts" type="int">58</pref>
+	<pref name="CustomWorld_4c0c60b20e7e85f5acdf3fa9bcf9589f_PlayIndex" type="int">584</pref>
+	<pref name="CustomWorld_60352bded83c6dd21f56108de817a184_Attempts" type="int">30</pref>
+	<pref name="CustomWorld_60352bded83c6dd21f56108de817a184_PlayIndex" type="int">594</pref>
+	<pref name="CustomWorld_74497e016f69d167825cd113814e3d78_Attempts" type="int">11</pref>
+	<pref name="CustomWorld_74497e016f69d167825cd113814e3d78_PlayIndex" type="int">595</pref>
+	<pref name="CustomWorld_7af60a2197b4873362dba45af80d3b80_Attempts" type="int">11</pref>
+	<pref name="CustomWorld_7af60a2197b4873362dba45af80d3b80_Completion" type="float">0.539106</pref>
+	<pref name="CustomWorld_7af60a2197b4873362dba45af80d3b80_PlayIndex" type="int">590</pref>
+	<pref name="CustomWorld_8101a7af7b006fd8d768b4dd1c6e2956_Attempts" type="int">71</pref>
+	<pref name="CustomWorld_8101a7af7b006fd8d768b4dd1c6e2956_PlayIndex" type="int">591</pref>
+	<pref name="CustomWorld_86622ea0c14f583c4b8c56232e0f63b1_Attempts" type="int">71</pref>
+	<pref name="CustomWorld_86622ea0c14f583c4b8c56232e0f63b1_PlayIndex" type="int">586</pref>
+	<pref name="CustomWorld_86e65fe2b99ead5eca6ecdd0e6778b93_PlayIndex" type="int">581</pref>
+	<pref name="CustomWorld_ad285aaa623de09d29c0a8ff0310b159_Attempts" type="int">100</pref>
+	<pref name="CustomWorld_ad285aaa623de09d29c0a8ff0310b159_PlayIndex" type="int">593</pref>
+	<pref name="CustomWorld_b16a3c92efb5db8870ffc78ecbf4a1d0_Attempts" type="int">137</pref>
+	<pref name="CustomWorld_b16a3c92efb5db8870ffc78ecbf4a1d0_PlayIndex" type="int">597</pref>
+	<pref name="CustomWorld_b5786aea3b499c61c625313812be6e37_Attempts" type="int">7</pref>
+	<pref name="CustomWorld_b5786aea3b499c61c625313812be6e37_PlayIndex" type="int">587</pref>
+	<pref name="CustomWorld_f1a53a295efa8ab7cc609ba3369141ef_Attempts" type="int">57</pref>
+	<pref name="CustomWorld_f1a53a295efa8ab7cc609ba3369141ef_PlayIndex" type="int">592</pref>
+	<pref name="SA_PREFS_LANG_KEY" type="int">8</pref>
+	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Fullscreen mode Default" type="int">3</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Height Default" type="int">540</pref>
+	<pref name="Screenmanager Resolution Use Native" type="int">1</pref>
+	<pref name="Screenmanager Resolution Use Native Default" type="int">0</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
+	<pref name="Screenmanager Resolution Width Default" type="int">960</pref>
+	<pref name="Screenmanager Window Position X" type="int">0</pref>
+	<pref name="Screenmanager Window Position Y" type="int">0</pref>
+	<pref name="UnitySelectMonitor" type="int">0</pref>
+	<pref name="editorScaleY" type="float">900</pref>
+	<pref name="globalVolume" type="int">10</pref>
+	<pref name="hideCursorWhilePlaying" type="int">1</pref>
+	<pref name="lastAnalyticsUpdate" type="int">250</pref>
+	<pref name="maxcalibrationrank" type="int">1</pref>
+	<pref name="unity.cloud_userid" type="string">MjgwZGU1ZmM0OTMxYzVmODJhMTMxN2Q0ZGMzZjk3Yjg=</pref>
+	<pref name="unity.player_session_count" type="string">NA==</pref>
+	<pref name="unity.player_sessionid" type="string">NTc1NTM0NDY2NzE0MzUyMDMyOQ==</pref>
+</unity_prefs>

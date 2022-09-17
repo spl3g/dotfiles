@@ -1,0 +1,7 @@
+game:
+  exe: /home/jerpo/Games/Geometry Dash/GeometryDash.exe
+  prefix: ~/Games/protongames
+system: {}
+wine:
+  battleye: false
+  eac: false

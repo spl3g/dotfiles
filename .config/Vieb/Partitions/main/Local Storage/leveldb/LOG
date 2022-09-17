@@ -1,0 +1,5 @@
+2022/09/12-01:48:21.274 4336 Creating DB /home/jerpo/.config/Vieb/Partitions/main/Local Storage/leveldb since it was missing.
+2022/09/12-01:48:21.282 4336 Reusing MANIFEST /home/jerpo/.config/Vieb/Partitions/main/Local Storage/leveldb/MANIFEST-000001
+2022/09/12-01:54:08.765 4328 Level-0 table #5: started
+2022/09/12-01:54:08.799 4328 Level-0 table #5: 405601 bytes OK
+2022/09/12-01:54:08.803 4328 Delete type=0 #3

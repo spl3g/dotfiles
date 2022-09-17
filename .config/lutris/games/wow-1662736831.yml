@@ -1,0 +1,10 @@
+game:
+  exe: /home/jerpo/Downloads/World of Warcraft Sirus/run.exe
+  prefix: ~/Games/protongames
+system:
+  mangohud: true
+  prime: true
+wine:
+  battleye: true
+  eac: false
+  fsr: false

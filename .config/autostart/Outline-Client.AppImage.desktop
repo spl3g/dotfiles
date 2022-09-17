@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Outline-Client.AppImage
+Comment=Outline-Client.AppImagestartup script
+Exec=/opt/outline-client/Outline-Client.AppImage
+StartupNotify=false
+Terminal=false
