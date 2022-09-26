@@ -15,7 +15,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
-local browser = "waterfox-g4"
+local browser = "firefox"
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -47,7 +47,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nano"
@@ -165,7 +165,10 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
-awful.screen.connect_for_each_screen(function(s)
+    -- Disable icon
+    beautiful.tasklist_disable_icon = true
+
+awful.screen.connect_for_each_screen(function(s)	
     -- Wallpaper
     set_wallpaper(s)
 
@@ -195,7 +198,6 @@ awful.screen.connect_for_each_screen(function(s)
         filter  = awful.widget.tasklist.filter.currenttags,
         buttons = tasklist_buttons
     }
-
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
@@ -231,6 +233,14 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+    -- My keys
+    awful.key({                   }, "Print", function() awful.spawn("flameshot gui") end,
+              {desciption = "Print a screen", group = "Awful binds"}), 
+    awful.key({ modkey,           }, "t", function() awful.spawn("telegram-desktop") end,
+              {description = "open telegram", group = "awful bindings"}),
+    awful.key({ modkey, "Control", "Shift" }, "e", function() awful.spawn("shutdown now") end,
+              {desciption = "Shutdown", group = "awesome"}),
+
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
