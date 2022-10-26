@@ -82,17 +82,17 @@ _G.packer_plugins = {
   YouCompleteMe = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/YouCompleteMe",
-    url = "https://github.com/ycm-core/YouCompleteMe"
+    url = "https://github.com/Valloric/YouCompleteMe"
   },
   ale = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
   },
-  ["dashboard-nvim"] = {
+  ["ctrlp.vim"] = {
     loaded = true,
-    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ctrlp.vim",
+    url = "https://github.com/kien/ctrlp.vim"
   },
   ["emmet-vim"] = {
     loaded = true,
@@ -114,10 +114,20 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
+  ["goyo.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    url = "https://github.com/junegunn/goyo.vim"
+  },
   ["jedi-vim"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/jedi-vim",
     url = "https://github.com/davidhalter/jedi-vim"
+  },
+  ["limelight.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/limelight.vim",
+    url = "https://github.com/junegunn/limelight.vim"
   },
   nerdtree = {
     loaded = true,
@@ -144,10 +154,25 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  syntastic = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/syntastic",
+    url = "https://github.com/vim-syntastic/syntastic"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["thesaurus_query.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/thesaurus_query.vim",
+    url = "https://github.com/ron89/thesaurus_query.vim"
+  },
+  ["vim-LanguageTool"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-LanguageTool",
+    url = "https://github.com/dpelle/vim-LanguageTool"
   },
   ["vim-airline"] = {
     loaded = true,
@@ -159,10 +184,35 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/skammer/vim-css-color"
+  },
+  ["vim-flake8"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-flake8",
+    url = "https://github.com/nvie/vim-flake8"
+  },
   ["vim-gruvbox8"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-gruvbox8",
     url = "https://github.com/lifepillar/vim-gruvbox8"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
+  },
+  ["vim-pencil"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-pencil",
+    url = "https://github.com/preservim/vim-pencil"
+  },
+  ["vim-pug"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-pug",
+    url = "https://github.com/digitaltoad/vim-pug"
   },
   ["vim-python-pep8-indent"] = {
     loaded = true,
@@ -173,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-pythonsense",
     url = "https://github.com/jeetsukumaran/vim-pythonsense"
+  },
+  ["vim-stylus"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-stylus",
+    url = "https://github.com/wavded/vim-stylus"
   }
 }
 
