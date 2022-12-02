@@ -1,2 +1,5 @@
 default-timeout=5000
 max-history=3
+background-color=#282828
+text-color=#ebdbb2
+border-color=#8ec07c

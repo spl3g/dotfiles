@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
   },
+  ["bracey.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/bracey.vim",
+    url = "https://github.com/turbio/bracey.vim"
+  },
   ["ctrlp.vim"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ctrlp.vim",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/fd",
     url = "https://github.com/sharkdp/fd"
+  },
+  firenvim = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/firenvim",
+    url = "https://github.com/glacambre/firenvim"
   },
   fzf = {
     loaded = true,
@@ -159,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/syntastic",
     url = "https://github.com/vim-syntastic/syntastic"
   },
+  ["tagalong.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/tagalong.vim",
+    url = "https://github.com/AndrewRadev/tagalong.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -209,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-pencil",
     url = "https://github.com/preservim/vim-pencil"
   },
+  ["vim-plugin-ruscmd"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-plugin-ruscmd",
+    url = "https://github.com/powerman/vim-plugin-ruscmd"
+  },
   ["vim-pug"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-pug",
@@ -228,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-stylus",
     url = "https://github.com/wavded/vim-stylus"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

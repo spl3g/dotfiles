@@ -1,5 +1,4 @@
 /*:root {
-	--black: #282828;
 	--accent: #689d6a;
 	--white: #ebdbb2;
 	--accent-shadow: #8ec07c;
@@ -12,7 +11,7 @@
 }
 
 window#waybar {
-    background-color: rgba(40, 40, 40, 0.0);
+    background: transparent;
     border-bottom: 3px solid rgba(29, 32, 33, 0.0);
     color: #ebdbb2;
     transition-property: background-color;
@@ -54,7 +53,7 @@ window#waybar.chromium {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: #79740e;
+    background: #282828;
     box-shadow: inset 0 -3px #ebdbb2;
 }
 
@@ -112,15 +111,28 @@ If workspaces is the rightmost module, omit right margin
 
 #clock {
     background-color: #689d6a;
+    color: #ebdbb2;
     box-shadow: inset 0 -3px #8ec07c;
+    border-radius: 0px;
+    border: none;
+}
+#clock:hover {
+    box-shadow: inset 0 -3px #ebdbb2; 
+    background: #689d6a;
 }
 
 #battery {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
-
+#battery:hover {
+    box-shadow: inset 0 -3px #ebdbb2; 
+    background: #282828;
+    color: #ebdbb2;
+}
 #battery.charging, #battery.plugged {
     color: #689d6a;
     background-color: #282828;
@@ -153,23 +165,31 @@ label:focus {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #memory {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #disk {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #backlight {
     background-color: #282828;
     color: #ebdbb2;
+    border-radius: 0px;
+    border: none;
     box-shadow: inset 0 -3px #665c54;
 }
 
@@ -177,20 +197,35 @@ label:focus {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #network.disconnected {
     background-color: #282828;
     color: #cc241d;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
+}
+
+#network:hover {
+    box-shadow: inset 0 -3px #ebdbb2;
+    background: #282828;
 }
 
 #pulseaudio {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
-
+#pulseaudio:hover {
+    background: #282828;
+    color: #ebdbb2;
+    box-shadow: inset 0 -3px #ebdbb2;
+}
 #pulseaudio.muted {
     background-color: #282828;
     color: #689d6a;
@@ -200,6 +235,8 @@ label:focus {
     background-color: #66cc99;
     color: #2a5c45;
     min-width: 100px;
+    border-radius: 0px;
+    border: none;
 }
 
 #custom-media.custom-spotify {
@@ -214,6 +251,8 @@ label:focus {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #temperature.critical {
@@ -224,6 +263,8 @@ label:focus {
 #tray {
     background-color: #689d6a;
     box-shadow: inset 0 -3px #8ec07c;
+    border-radius: 0px;
+    border: none;
 }
 
 #tray > .passive {
@@ -239,11 +280,18 @@ label:focus {
     background-color: #282828;
     color: #ebdbb2;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #idle_inhibitor.activated {
     background-color: #282828;
     color: #689d6a;
+}
+
+#idle_inhibitor:hover {
+    background: #282828;
+    box-shadow: inset 0 -3px #ebdbb2;
 }
 
 #mpd {
@@ -269,6 +317,8 @@ label:focus {
     padding: 0 5px;
     min-width: 29px;
     box-shadow: inset 0 -3px #665c54;
+    border-radius: 0px;
+    border: none;
 }
 
 #keyboard-state {
@@ -277,6 +327,8 @@ label:focus {
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
+    border-radius: 0px;
+    border: none;
 }
 
 #keyboard-state > label {
