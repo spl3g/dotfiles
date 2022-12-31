@@ -3,6 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 
  return require('packer').startup(function(use)
  	use 'wbthomason/packer.nvim'
+	use 'elkowar/yuck.vim'
 	use 'powerman/vim-plugin-ruscmd'
  	use 'tmhedberg/SimpylFold'
  	use 'jeetsukumaran/vim-pythonsense'
@@ -17,6 +18,7 @@ vim.cmd [[packadd packer.nvim]]
  	use 'Valloric/YouCompleteMe'
  	use 'lifepillar/vim-gruvbox8'
  	use 'BurntSushi/ripgrep'
+	use 'xiyaowong/nvim-transparent'
  	use 'sharkdp/fd'
  	use 'vim-syntastic/syntastic'
  	use 'nvie/vim-flake8'
@@ -44,6 +46,10 @@ vim.cmd [[packadd packer.nvim]]
             'glacambre/firenvim',
             run = function() vim.fn['firenvim#install'](0) end 
         }
-	use 'iamcco/markdown-preview.nvim'
+
+        use({
+            "iamcco/markdown-preview.nvim",
+            run = function() vim.fn["mkdp#util#install"]() end,
+        })
  end)
 

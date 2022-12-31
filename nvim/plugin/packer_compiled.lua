@@ -139,10 +139,20 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/limelight.vim",
     url = "https://github.com/junegunn/limelight.vim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -253,6 +263,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["yuck.vim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/yuck.vim",
+    url = "https://github.com/elkowar/yuck.vim"
   }
 }
 

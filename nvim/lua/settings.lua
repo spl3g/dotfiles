@@ -18,6 +18,7 @@ o.clipboard = 'unnamedplus'
 g.limelight_conceal_ctermfg = 'LightGray'
 g.python_highlight_all=1
 g.cssColorVimDoNotMessMyUpdatetime = 1
+g.transparent_enabled = true
 g.languagetool_jar='$HOME/languagetool/languagetool-commandline.jar'
 -- local builtin = require('telescope.builtin')
 -- vim.keymap.set('n', 'ff', builtin.find_files, {})
