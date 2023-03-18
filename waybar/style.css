@@ -8,6 +8,12 @@
 window#waybar {
     background: transparent;
 }
+tooltip label {
+  background: #282828;
+  color: #ebdbb2;
+  border-radius: 20px;
+  padding: 2px;
+}
 
 .modules-right {
     background-color: #282828;
@@ -59,6 +65,9 @@ window#waybar {
 
 #tray {
     padding-left: 10px;
+}
+tray menu {
+  background-color: #ebdbb2;
 }
 
 #language {

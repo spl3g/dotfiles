@@ -24,11 +24,11 @@
 	"format": "{:%H:%M  }",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d %h %Y  }",
-	"on-click": "killall calcure || alacritty -t calcure -e calcure"
+	"on-click": "killall calcure || alacritty -t calcure -e calcure && sudo ydotool click 0xc1"
     },
     "memory": {
         "format": "{}% ",
-	"on-click": "killall btop || alacritty -t btop -e btop"
+	"on-click": "killall btop || alacritty -t btop -e btop && sudo ydotool click 0xc1"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -51,12 +51,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "",
+        "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠",
-        "format-alt": "{essid} ({signalStrength}%) "
+        "on-click": "killall connman-gtk || connman-gtk && sudo ydotool click 0xc1"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

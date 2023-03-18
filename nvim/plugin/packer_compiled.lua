@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/firenvim",
     url = "https://github.com/glacambre/firenvim"
   },
+  ["flow.nvim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/flow.nvim",
+    url = "https://github.com/arjunmahishi/flow.nvim"
+  },
   fzf = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/fzf",
@@ -154,10 +159,25 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-transparent",
     url = "https://github.com/xiyaowong/nvim-transparent"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -174,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  ["structlog.nvim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/structlog.nvim",
+    url = "https://github.com/Tastyep/structlog.nvim"
+  },
   syntastic = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/syntastic",
@@ -183,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/tagalong.vim",
     url = "https://github.com/AndrewRadev/tagalong.vim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -198,11 +228,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-LanguageTool",
     url = "https://github.com/dpelle/vim-LanguageTool"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-commentary"] = {
     loaded = true,
@@ -228,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/preservim/vim-markdown"
+  },
+  ["vim-nano"] = {
+    loaded = true,
+    path = "/home/jerpo/.local/share/nvim/site/pack/packer/start/vim-nano",
+    url = "https://github.com/nims11/vim-nano"
   },
   ["vim-pencil"] = {
     loaded = true,
