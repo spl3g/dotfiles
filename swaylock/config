@@ -1,10 +1,10 @@
-color=282828
+image=/home/jerpo/Pictures/.lockscreen.jpeg
 hide-keyboard-layout
 bs-hl-color=fb4934
-inside-color=282828
-inside-clear-color=282828
-inside-ver-color=282828
-inside-wrong-color=282828
+inside-color=28282800
+inside-clear-color=28282800
+inside-ver-color=28282800
+inside-wrong-color=28282800
 key-hl-color=8ec07c
 line-color=ffffff00
 line-clear-color=ffffff00
