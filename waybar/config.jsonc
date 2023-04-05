@@ -12,7 +12,7 @@
      "all-outputs": true
    },
    "hyprland/language": {
-	   "format": "{} ",
+	   "format": "{} 󰗊",
 	   "format-ru": "ru",
 	   "format-en": "en"
    },
@@ -21,19 +21,19 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-	"format": "{:%H:%M  }",
+	"format": "{:%H:%M  󰅐}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d %h %Y  }",
-	"on-click": "killall calcure || alacritty -t calcure -e calcure && sudo ydotool click 0xc1"
+        "format-alt": "{:%d %h %Y  󰃮}",
+	"on-click": "killall calcure || alacritty -t calcure -e calcure; ydotool click 0xc1"
     },
     "memory": {
         "format": "{}% ",
-	"on-click": "killall btop || alacritty -t btop -e btop && sudo ydotool click 0xc1"
+	"on-click": "killall btop || alacritty -t btop -e btop; ydotool click 0xc1"
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["","", ""]
+        "format-icons": ["","󰃟", "󰃠"]
     },
     "battery": {
         "states": {
@@ -41,40 +41,40 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
-        "format-charging": "{capacity}% ",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{capacity}% {icon}",
+        "format-alt": "{icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", "", "", "", ""]
+        "format-icons": ["󱃍", "󰁼", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ({signalStrength}%) 󰤨",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "⚠",
-        "on-click": "killall connman-gtk || connman-gtk && sudo ydotool click 0xc1"
+        "format-disconnected": "󰤫",
+        "on-click": "killall connman-gtk || connman-gtk; ydotool click 0xc1"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "x {icon} {format_source}",
-        "format-muted": "x {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-bluetooth": "{volume}% 󰥰 {format_source}",
+        "format-bluetooth-muted": "󰟎 {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "{volume}% 󰍬",
+        "format-source-muted": "󰍭",
         "format-icons": {
-            "headphone": "",
+            "headphone": "󰋋",
             "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-	    "muted-icon": "ﱝ",
-            "default": ["", "", ""]
+	    "muted-icon": "󰝟",
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
     },
