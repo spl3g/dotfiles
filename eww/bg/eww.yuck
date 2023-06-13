@@ -1,0 +1,12 @@
+(defwindow bg
+  :stacking "bg"
+  :focusable false
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "100%"
+             :height "100%"
+             :anchor "center")
+  (img))
+(defwidget img[]
+  (image :path "~/.cat.png" :image-height 1920 :image-width 1080))

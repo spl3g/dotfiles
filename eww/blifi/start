@@ -1,0 +1,27 @@
+#!/bin/bash
+
+file="$HOME/.cache/eww_blifi"
+cfg="$HOME/.config/eww/blifi/"
+EWW=$(which eww)
+
+if [[ ! $(pidof eww) ]]; then
+    ${EWW} daemon
+    sleep 1
+fi
+
+run_eww() {
+    ${EWW} --config "$cfg" open-many \
+        chooser \
+        wifi
+}
+
+if [[ ! -f "$file" ]]; then
+    touch "$file"
+    run_eww
+else
+    ${EWW} --config "$cfg" close \
+        chooser \
+        wifi \
+        bluetooth
+    rm -f "$file"
+fi

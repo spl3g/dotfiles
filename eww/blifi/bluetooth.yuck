@@ -1,0 +1,20 @@
+(defwindow bluetooth
+  :stacking "fg"
+  :focusable false
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "10%"
+             :height "5%"
+             :x "13%"
+             :y "5%"
+             :anchor "top right")
+  (bluetooth-widget))
+
+(defwidget bluetooth-widget []
+ (box :orientation "vertical"
+      :valign "start"
+      :vexpand true
+      :class "blue-widget"
+      (for entry in {blifi[0]}
+           (button :class "blue-button" :onclick "bluetoothctl connect ${entry.id}" {entry.name}))))

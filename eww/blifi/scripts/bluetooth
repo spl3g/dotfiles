@@ -1,0 +1,13 @@
+#!/bin/bash
+devices=$(bluetoothctl devices | awk '{print $2}')
+file=$HOME/.config/eww/scripts/jblu
+bluetoothctl power on > /dev/null
+bluetoothctl --timeout 10 scan on > /dev/null
+if [[ -e $file ]]; then
+    rm -f $file
+fi
+while read uuid; do
+    bluetoothctl info $uuid | awk '/Device/ {printf "%s;", $2} {FS = ": "} /Alias/ {printf "%s;", $2}  /Paired/ {printf "%s;", $2} /Connected/ {printf "%s", $2}' | awk -F ';' '{printf "{\"id\":\"%s\",\"name\":\"%s\",\"paired\":\"%s\",\"connected\":\"%s\"},", $1, $2, $3, $4}' >> $file
+done <<< $devices
+ct=$(cat $file | rev | cut -c 2- | rev)
+echo "[$ct]" > $file

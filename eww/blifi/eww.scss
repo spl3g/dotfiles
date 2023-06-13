@@ -1,0 +1,76 @@
+* {
+    all: unset;
+    font-family: Rubik;
+    font-size: 16px;
+}
+
+.blifi-widget {
+    background-color: #1f1d2e;
+    border: 2px solid #908caa;
+    border-radius: 10px;
+}
+
+.wifi-widget {
+    background-color: #191724;
+    padding: 10px;
+    color: #908caa;
+    border-radius: 15px;
+    margin-top: 5px;
+    transition: all 250ms ease-out;
+}
+
+.blue-widget {
+    border-radius: 10px;
+    background-color: #191724;
+    padding: 10px;
+    color: #908caa;
+    border-radius: 15px;
+    margin-top: 5px;
+    transition: all 250ms ease-out;
+}
+
+.combine-widget {
+    margin-top: 10px;
+    padding: 2px;
+    border: 2px solid #908caa;
+    border-radius: 5px;
+}
+
+.wifi-label {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.blue-label {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.wifi-button {
+    padding: 6px;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+    background-color: #26233a;
+    transition: all 0.3s ease-in-out;
+    color: #908caa;
+    &:hover {
+        color: #232136;
+        background-color: #908caa;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.blue-button {
+    padding: 6px;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+    background-color: #26233a;
+    transition: all 0.3s ease-in-out;
+    color: #908caa;
+    &:hover {
+        color: #232136;
+        background-color: #908caa;
+        transition: all 0.3s ease-in-out;
+    }
+}
+

@@ -1,0 +1,42 @@
+(deflisten workspace
+  `./scripts/active`)
+(deflisten layout
+  `./scripts/layout`)
+(defpoll time :interval "5s"
+  `date +'{"hour":"%H","min":"%M"}'`)
+
+(defwindow bar
+  :stacking "fg"
+  :focusable false
+  :exclusive true
+  :monitor 0
+  :geometry (geometry :width "99%"
+                      :height "4%"
+                      :y "1%"
+                      :anchor "top center")
+  (combine))
+(defwidget combine []
+  (centerbox
+   (left)
+   (center)
+   (right)))
+(defwidget left []
+  (box :space-evenly false
+   (button :onclick "hyprctl dispatch workspace 1" :class {workspace == "1" ? "active-workspace" : "workspace"} "1")
+   (button :onclick "hyprctl dispatch workspace 2" :class {workspace == "2" ? "active-workspace" : "workspace"} "2")
+   (button :onclick "hyprctl dispatch workspace 3" :class {workspace == "3" ? "active-workspace" : "workspace"} "3")
+   (button :onclick "hyprctl dispatch workspace 4" :class {workspace == "4" ? "active-workspace" : "workspace"} "4")
+   (button :onclick "hyprctl dispatch workspace 5" :class {workspace == "5" ? "active-workspace" : "workspace"} "5")
+   (button :onclick "hyprctl dispatch workspace 6" :class {workspace == "6" ? "active-workspace" : "workspace"} "6")))
+(defwidget center []
+  (button :onclick "notify-send yep 'you clicked this'" "${time.hour} : ${time.min}"))
+(defwidget right []
+  (box
+       (keyboard)
+       (battery)))
+(defwidget battery []
+  (circular-progress :clockwise false :thickness 4 :width 3
+                     :start-at 72 :value {EWW_BATTERY.BAT1.capacity}
+                     {EWW_BATTERY.BAT1.status == "Discharging" ? '' : 'hi'}))
+(defwidget keyboard []
+  (label :text {layout == "English (US)" ? "en" : "ru"}))

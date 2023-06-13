@@ -1,0 +1,54 @@
+(defwindow wifi
+  :stacking "fg"
+  :focusable false
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "10%"
+             :height "5%"
+             :x "13%"
+             :y "6%"
+             :anchor "top right")
+  (wifi-widget
+   :zero "󰤯"
+   :one "󰤟" :two "󰤢"
+   :three "󰤥" :four "󰤨"
+   :lock "󰌾" :unlock "󰌿"))
+
+(defwindow password
+  :stacking "fg"
+  :focusable true
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "10%"
+             :height "5%"
+             :x "13%"
+             :y "6%"
+             :anchor "top right")
+  (inp-widget))
+
+(defvar name "")
+(defvar id "")
+
+(defwidget inp-widget []
+  (box :orientation "vertical"
+       :vexpand "true"
+   (label :text "Enter the password for ${name}")
+   (input :password true
+          :onaccept "nmcli d w c ${id} password {} && ${EWW_CMD} close password && rm -f $HOME/.cache/eww_blifi")))
+
+(defwidget wifi-widget [zero one two three four lock unlock]
+  (box :valign "start"
+       :orientation "vertical"
+       :class "wifi-widget"
+       (for entry in {blifi[1]}
+            (button  :class "wifi-button" :onclick
+                     {entry.lock == "--" ? "nmcli d w c ${entry.id}" : "${EWW_CMD} update name='${entry.name}' && ${EWW_CMD} update id='${entry.id}' && ${EWW_CMD} close wifi chooser && ${EWW_CMD} open password"}
+                    (box :class "wifi-text" :space-evenly false :spacing 5
+                         (label :text "${entry.name}")
+                         (label :text {entry.strength == 0 ? zero :
+                                             entry.strength < 26 ? one :
+                                             entry.strength < 51 ? two :
+                                             entry.strength < 76 ? three : four})
+                         (label :text {entry.lock == "--" ? unlock : lock}))))))

@@ -1,0 +1,47 @@
+(defpoll poll1 :interval "5s"
+  `cat $HOME/file`)
+
+(defvar widget1-var
+  "(widget1)")
+(defvar widget2-var
+  "(widget2)")
+(defvar choise
+  "1")
+
+(defwindow window
+  :stacking "fg"
+  :focusable false
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "10%"
+             :height "5%"
+             :anchor "center")
+  (combine))
+
+(defwidget combine []
+  (box :orientation "vertical"
+       :valign "start"
+       :vexpand "true"
+       :space-evenly false
+       (chooser)
+       (literal :content {choise == "1" ? widget1-var : widget2-var})))
+
+(defwidget chooser []
+  (box :halign "center"
+       :space-evenly false
+       (button :onclick "${EWW_CMD} update choise=1" "button1")
+       (button :onclick "${EWW_CMD} update choise=2" "button2")))
+
+(defwidget widget1 []
+  (box :orientation "vertical"
+       :valign "start"
+       :vexpand true
+       (for entry in {poll1[0]}
+            (button {entry.name}))))
+
+(defwidget widget2 []
+  (box :valign "start"
+       :orientation "vertical"
+       (for entry in {poll1[1]}
+            (button {entry.name}))))

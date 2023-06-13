@@ -1,0 +1,4 @@
+plugins = [
+  "outfoxxed/hy3",
+  "VortexCoyote/hyprfocus",
+]

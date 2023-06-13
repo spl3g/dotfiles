@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pactl subscribe | awk '/new/' | while read line; do
+    echo a
+done

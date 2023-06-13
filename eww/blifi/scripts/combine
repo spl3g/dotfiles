@@ -1,0 +1,13 @@
+#!/bin/bash
+./nmcli &
+pid_net=$!
+
+./bluetooth &
+pid_blue=$!
+
+wait $pid_net $pid_blue
+
+jnet=$(cat jnet)
+jblue=$(cat jblue)
+
+echo "[$jblue,$jnet]" > jcomb

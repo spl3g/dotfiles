@@ -1,0 +1,28 @@
+(include "./bluetooth.yuck")
+(include "./wifi.yuck")
+
+(defpoll blifi :interval "5s"
+  :initial `cat $HOME/.config/eww/blifi/scripts/jcomb`
+  `bash -c "$HOME/.config/eww/blifi/scripts/combine" && cat $HOME/.config/eww/blifi/scripts/jcomb`)
+
+(defwindow chooser
+  :stacking "fg"
+  :focusable false
+  :exclusive false
+  :monitor 0
+  :geometry (geometry
+             :width "10%"
+             :height "4%"
+             :x "13%"
+             :y "1%"
+             :anchor "top right")
+  (chooser-widget))
+
+(defwidget chooser-widget []
+  (box :hexpand true
+       :halign "center"
+       :class "combine-widget"
+       :space-evenly false
+       :spacing 20
+       (button :onclick "${EWW_CMD} close bluetooth && ${EWW_CMD} open wifi || ${EWW_CMD} open wifi" :class "wifi-label" "wifi")
+       (button :onclick "${EWW_CMD} close wifi && ${EWW_CMD} open bluetooth || ${EWW_CMD} open bluetooth" :class "blue-label" "bluetooth")))

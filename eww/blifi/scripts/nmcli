@@ -1,0 +1,5 @@
+#!/bin/bash
+file=$HOME/.config/eww/scripts/jnet
+net=$(nmcli -f BSSID,SSID,SIGNAL,SECURITY device wifi | awk  'NR > 1 {printf "{\"id\":\"%s\",\"name\":\"%s\",\"strength\":%d,\"lock\":\"%s\"},", $1, $2, $3, $4}')
+ct=$(echo $net | rev | cut -c 2- | rev)
+echo "[$ct]" > $file
