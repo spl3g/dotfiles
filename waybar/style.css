@@ -12,7 +12,7 @@ tooltip label {
   background: #1f1d2e;
   color: #908caa;
   border: 1px solid #908caa;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 5px;
 }
 
@@ -86,6 +86,8 @@ tooltip label {
     border: 2px solid #908caa;
     border-radius: 10px;
     padding: 5px;
+    font-family: Rubik;
+    font-weight: lighter;
 }
 
 #language {
